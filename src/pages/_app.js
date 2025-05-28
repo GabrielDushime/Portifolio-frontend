@@ -1,5 +1,13 @@
-import "@/styles/globals.css";
+import '@/styles/globals.css';
+import { ConfigProvider } from 'antd';
+import { themeConfig } from '@/styles/theme';
 
-export default function App({ Component, pageProps }) {
-  return <Component {...pageProps} />;
+function MyApp({ Component, pageProps }) {
+  return (
+    <ConfigProvider theme={themeConfig}>
+      <Component {...pageProps} />
+    </ConfigProvider>
+  );
 }
+
+export default MyApp;

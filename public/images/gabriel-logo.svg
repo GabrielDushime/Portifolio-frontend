@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background gradient -->
+  <defs>
+    <linearGradient id="logoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10B981" />
+      <stop offset="100%" stop-color="#059669" />
+    </linearGradient>
+    <linearGradient id="glow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4ADE80" stop-opacity="0.5" />
+      <stop offset="100%" stop-color="#10B981" stop-opacity="0" />
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+  
+  <!-- Outer decorative element -->
+  <rect x="30" y="28" width="140" height="140" rx="12" ry="12" 
+        fill="none" stroke="url(#logoGradient)" stroke-width="3" 
+        transform="rotate(-6, 100, 100)" opacity="0.6" />
+  
+  <!-- Main background shape -->
+  <rect x="40" y="40" width="120" height="120" rx="10" ry="10" 
+        fill="url(#logoGradient)" transform="rotate(-6, 100, 100)" />
+  
+  <!-- Glow effect -->
+  <circle cx="120" cy="70" r="40" fill="url(#glow)" opacity="0.7" />
+  
+  <!-- Code bracket decorative element -->
+  <path d="M55 70 L70 55 L80 65 L70 75 Z" fill="#FFFFFF" opacity="0.15" />
+  <path d="M145 130 L130 145 L120 135 L130 125 Z" fill="#FFFFFF" opacity="0.15" />
+  
+  <!-- Main text -->
+  <g filter="url(#shadow)">
+    <text x="100" y="115" font-family="Arial, sans-serif" font-size="70" font-weight="bold" 
+          text-anchor="middle" fill="#FFFFFF">GD</text>
+  </g>
+  
+  <!-- Decorative dots -->
+  <circle cx="55" cy="55" r="4" fill="#FFFFFF" opacity="0.7" />
+  <circle cx="145" cy="145" r="4" fill="#FFFFFF" opacity="0.7" />
+  
+  <!-- Subtle circuit-like pattern -->
+  <path d="M40 100 H60 M55 95 V105" stroke="#FFFFFF" stroke-width="1.5" opacity="0.3" />
+  <path d="M140 100 H160 M145 95 V105" stroke="#FFFFFF" stroke-width="1.5" opacity="0.3" />
+</svg>
