@@ -28,10 +28,11 @@ export default function Home() {
         <SkillsSection />
         <ExperienceSection />
         <ProjectsSection />
+        <CertificateSection/>
         <BlogSection />
         <HireSection />
         <ContactSection />
-        <CertificateSection/>
+        
       </Layout>
     </>
   );
