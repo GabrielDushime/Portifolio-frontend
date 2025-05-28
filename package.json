@@ -13,18 +13,18 @@
     "antd": "^5.24.9",
     "axios": "^1.9.0",
     "framer-motion": "^12.9.7",
-    "next": "15.3.1",
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0",
+     "next": "14.2.18",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
     "react-markdown": "^10.1.0",
     "react-router-dom": "^7.5.3",
     "react-scroll": "^1.9.3"
   },
   "devDependencies": {
-    "@tailwindcss/postcss": "^4.1.5",
-    "autoprefixer": "^10.4.21",
+     "@tailwindcss/postcss": "^10.4.21",
+    "autoprefixer": "^10.4.21", 
     "postcss": "^8.5.3",
-    "tailwindcss": "^4.1.5"
+    "tailwindcss": "^3.4.15"
   },
   "description": "This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/pages/api-reference/create-next-app).",
   "main": "index.js",
