@@ -1,7 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
-  output: 'standalone',
   images: {
     domains: [],
   },
@@ -19,6 +18,9 @@ const nextConfig = {
     'rc-virtual-list',
     'rc-overflow',
   ],
+  experimental: {
+    esmExternals: true,
+  },
 }
 
 module.exports = nextConfig;
